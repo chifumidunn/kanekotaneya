@@ -1,0 +1,775 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "游明朝 Medium", "ヒラギノ明朝 Pro W3", sans-serif;
+  font-weight: bold;
+  color: #4d340e;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+#news, #order, #store, #access {
+  padding: 70px 0 50px 0;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.title-top {
+  position: relative;
+  padding: 10px 0;
+}
+
+.title {
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 0.3em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+}
+
+.btn {
+  display: inline-block;
+  width: 250px;
+  height: 60px;
+  padding: 13px 0;
+  margin: auto;
+  border-radius: 30px;
+  background-color: #5c935f;
+  color: #fefefe;
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 0.09em;
+  text-decoration: none;
+  text-align: center;
+  border: 2px solid #5c935f;
+}
+
+.btn:hover {
+  opacity: 0.8;
+  background-color: #fefefe;
+  color: #5c935f;
+  border: 2px solid #5c935f;
+  border-radius: 30px;
+}
+
+.gnav-sp-wrap {
+  display: none;
+}
+
+/** -------- スマホ -------- **/
+@media screen and (max-width: 768px){
+  #news, #order, #store, #access {
+    padding: 30px 25px;
+    max-width: 550px;
+    margin: auto;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .btn {
+    width: 160px;
+    height: 38px;
+    font-size: 12px;
+    padding: 8px 0;
+  }
+}
+
+/** -----------------------------------
+    ヘッダー
+-------------------------------------**/
+#header {
+  background-color: #fefefe;
+  width: 100%;
+  height: 110px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  width: 25%;
+}
+
+.header-logo a {
+  display: flex;
+}
+
+.header-right {
+  display: block;
+  margin-left: auto;
+  margin-right: -55px;
+  margin-bottom: 7px;
+}
+
+.header-top {
+  display: flex;
+  height: 60%;
+  padding: 10px 10px;
+}
+
+.phonenumber {
+  font-size: 26px;
+  letter-spacing: 0.12em;
+  margin-top: 11px;
+}
+
+.faxbtn {
+  display: block;
+  width: 250px;
+  height: 55px;
+  padding: 6px 0;
+  margin: auto;
+  background-color: #5c935f;
+  color: #fefefe;
+  font-size: 15px;
+  letter-spacing: 0.09em;
+  text-indent: 0.09em;
+  text-decoration: none;
+  text-align: center;
+  line-height: 20px;
+  border: 2px solid #5c935f;
+}
+
+.faxorder {
+  font-size: 20px;
+  letter-spacing: 0.38em;
+  text-indent: 0.38em;
+}
+
+.faxbtn:hover {
+  opacity: 0.8;
+  background-color: #fefefe;
+  color: #5c935f;
+  border: 2px solid #5c935f;
+}
+
+.gnav-pc-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul.gnav-pc li {
+  display: inline;
+  margin-right: 55px;
+  position: relative;
+}
+
+ul.gnav-pc li a {
+  font-size: 20px;
+  letter-spacing: 0.2em;
+  color: #4d340e;
+}
+
+ul.gnav-pc li a::before {
+  content: url("../images/sprout.png");
+  display: inline-block;
+  vertical-align: middle;
+  transform: scale(0.4);
+  position: absolute;
+  top: -20px;
+  left: -55px;
+}
+
+ul.gnav-pc li a:hover {
+  color: #5c935f;
+}
+
+#menu-botton {
+  display: none;
+}
+
+/** -------- スマホ -------- **/
+@media screen and (max-width: 768px) {
+  #header {
+    height: 60px;
+    padding: 0;
+  }
+
+  .header-logo {
+    padding-left: 10px;
+    width: 35%;
+  }
+
+  .header-logo a {
+    display: flex;
+  }
+
+  .header-right {
+    display: none;
+  }
+
+  #menu-button {
+    position: relative;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    padding: 10px 35px;
+    margin-right: 10px;
+    margin-top: 5px;
+    z-index: 2;
+  }
+
+/*ボタン内側*/
+  .menu-button-inner span {
+    display: block;
+    transition: all 0.5s ease;
+    position: absolute;
+    left: 14px;
+    height: 3px;
+    background-color: #4d340e;
+    border-radius: 2px;
+    width: 45%;
+  }
+
+  .bar1 {
+    top:15px;
+  }
+
+  .bar2 {
+    top:23px;
+  }
+
+  .bar3 {
+    top:31px;
+  }
+
+  .bar1.open{
+      top: 18px;
+      left: 18px;
+      transform: translateY(6px) rotate(-45deg);
+  }
+
+  .bar2.open {
+    opacity: 0;
+  }
+
+  .bar3.open {
+      top: 30px;
+      left: 18px;
+      transform: translateY(-6px) rotate(45deg);
+  }
+
+  .gnav-sp-wrap {
+    width: 100%;
+    height: 100vh;
+    background-color: #fefefe;
+    position: fixed;
+    padding: 60px 0;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    -webkit-transition: .7s;
+    transition: .5;
+    display:-webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    z-index: 1;
+  }
+
+  .gnav-sp-wrap.open {
+    right: 0;
+  }
+
+  .gnav-sp {
+    padding: 80px 0;
+    margin: 0;
+  }
+
+  ul.gnav-sp li {
+    text-align: center;
+    margin-bottom: 30px;
+    list-style: none;
+  }
+
+  ul.gnav-sp li a {
+    font-family: "游明朝 Medium", "ヒラギノ明朝 Pro W3", sans-serif;
+    font-size: 20px;
+    color: #4d340e;
+    letter-spacing: 0.1em;
+  }
+}
+/** -----------------------------------
+      メインビジュアル
+-------------------------------------**/
+#mainvisual {
+  width: 100%;
+  height: calc(100vh - 100px);
+  background-image: url("../images/mainvisual-pc.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  margin-top: 100px;
+}
+
+.copy-wrap {
+  color: #fefefe;
+  position: absolute;
+  left: 80px;
+  bottom: 400px;
+  text-align: center;
+  text-shadow: 3px 3px 3px rgb(67 106 69);
+}
+
+.maincopy {
+  font-size: 45px;
+  line-height: 1.5;
+  letter-spacing: 0.3em;
+  margin-bottom: 35px;
+}
+
+.subcopy {
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.25em;
+}
+
+/** -------- スマホ -------- **/
+@media screen and (max-width: 768px) {
+  #mainvisual {
+    width: 100vw;
+    height: 100vw;
+    margin-top: 0;
+    background-image: url("../images/mainvisual-sp.jpg");
+  }
+
+  .maincopy {
+    font-size: 15px;
+    line-height: 1.3;
+    letter-spacing: 0.08em;
+    margin-bottom: 10px;
+  }
+
+  .subcopy {
+    font-size: 10px;
+    letter-spacing: 0.03em;
+  }
+
+  .copy-wrap {
+    left: 15px;
+    bottom: 175px;
+  }
+}
+
+/** -----------------------------------
+      お知らせ
+-------------------------------------**/
+.news-info {
+  padding: 50px 20px;
+}
+
+.news-info dl {
+  font-size: 20px;
+  overflow: hidden;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  border-bottom: 2px dashed #4d340e;
+  max-width: 800px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.news-info dt{
+  float: left;
+  clear: left;
+}
+
+.news-info dd {
+  float: left;
+  margin-left: 3em;
+  letter-spacing: 0.1em
+}
+
+.news-btn {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.newsbtn {
+  font-size: 21px;
+  letter-spacing: 0.2em;
+}
+/** -------- スマホ -------- **/
+@media screen and (max-width: 768px) {
+  .news-info {
+    padding: 10px 10px;
+  }
+
+  .news-info dl {
+    font-size: 15px;
+  }
+
+  .news-info dt {
+    float: none;
+  }
+
+  .news-info dd {
+    margin-left: 0;
+    padding-top: 10px;
+  }
+
+  .newsbtn {
+    font-size: 13px;
+    letter-spacing: 0.25em;
+  }
+}
+
+/** -----------------------------------
+      ご注文
+-------------------------------------**/
+.comment {
+  text-align: center;
+  font-size: 23px;
+  line-height: 1.2;
+  letter-spacing: 0.1em;
+  padding: 70px 0 20px 0;
+}
+
+.order-box {
+  padding: 45px 70px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.orderbox {
+  display: block;
+  width: 250px;
+  height: 120px;
+  padding: 10px 0;
+  border: 3px solid #4d340e;
+  text-decoration: none;
+  font-size: 28px;
+  letter-spacing: 0.25em;
+  text-indent: 0.25em;
+  color: #4d340e;
+  text-align: center;
+  margin: auto;
+  line-height: 48px;
+}
+
+.orderbox:hover {
+  background-color: #4d340e;
+  color: #fefefe;
+  opacity: 0.7;
+}
+
+.box-under {
+  letter-spacing: 0.6em;
+  text-indent: 0.6em;
+}
+
+.en {
+  letter-spacing: 0.35em;
+  text-indent: 0.35em;
+}
+
+.sp-order {
+  display: none;
+}
+
+/** -------- スマホ -------- **/
+@media screen and (max-width: 768px) {
+  .comment {
+    font-size: 15px;
+    padding: 20px 15px;
+  }
+
+  .order-box {
+    display: none;
+  }
+
+  .sp-order {
+    display: block;
+    text-align: center;
+  }
+
+  .form-item {
+    padding: 5px 15px;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .form-item-label {
+    max-width: inherit;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+  }
+
+  .form-item-label.ismsg {
+    margin-top: 15px;
+  }
+
+  .form-item-label-required {
+    display: inline-block;
+    text-align: center;
+    background: #4d340e;
+    color: #fefefe;
+    border-radius: 4px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    width: 30px;
+    font-size: 10px;
+    margin-right: 8px;
+  }
+
+  .form-item-input {
+    margin-left: 0;
+    margin-top: 0;
+    height: 40px;
+    flex: inherit;
+    font-size: 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    flex: 1;
+    width: 100%;
+    max-width: 410px;
+    background: #eaedf2;
+  }
+
+  .form-item-textarea {
+    margin-top: 0;
+    margin-left: 0;
+    height: 200px;
+    flex: inherit;
+    font-size: 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    flex: 1;
+    width: 100%;
+    max-width: 410px;
+    background: #eaedf2;
+  }
+
+  .form-btn {
+    margin-top: 15px;
+    padding: 5px 0;
+    width: 140px;
+    height: 35px;
+    font-family: "游明朝 Medium", "ヒラギノ明朝 Pro W3", sans-serif;
+    font-size: 14px;
+    color: #fefefe;
+    background-color: #4d340e;
+    border-radius: 6px;
+    letter-spacing: 0.25em;
+    text-align: center;
+    cursor: pointer;
+  }
+
+}
+/** -----------------------------------
+     　店舗案内
+-------------------------------------**/
+.store-info {
+  padding: 70px 20px 0px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.info {
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  line-height: 1.5em;
+  padding-top: 25px;
+}
+
+.store-photo {
+  width: 50%;
+  height: 50%;
+}
+
+.holiday {
+  font-size: 28px;
+  letter-spacing: 0.08em;
+}
+
+.info-tel {
+  letter-spacing: 0.11em;
+}
+/** -------- スマホ -------- **/
+@media screen and (max-width: 768px) {
+  .store-info {
+    padding: 20px 10px 0 10px;
+  }
+
+  .info {
+    font-size: 0.6em;
+    letter-spacing: 0.11em;
+    line-height: 1.2;
+    padding-top: 15px;
+    margin-bottom: 5px;
+  }
+
+  .holiday {
+    font-size: 0.5em;
+    letter-spacing: 0;
+    margin-top: 0;
+  }
+
+  .store-photo {
+    width: 50%;
+    height: 50%;
+  }
+}
+
+/** -----------------------------------
+      アクセス
+-------------------------------------**/
+.access-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 70px 10px;
+}
+
+.googlemap {
+  padding: 10px 40px;
+}
+
+iframe {
+  width: 400px;
+  height: 300px;
+}
+
+.address-info {
+  margin: auto;
+  text-align: left;
+}
+
+.address {
+  font-size: 25px;
+  line-height: 2.2em;
+  margin-top: -20px;
+}
+
+.access-info {
+  font-size: 17px;
+  letter-spacing: 0.1em;
+  padding-bottom: 15px;
+}
+
+/** -------- スマホ -------- **/
+@media screen and (max-width: 768px) {
+  iframe {
+    width: 200px;
+    height: 150px;
+  }
+
+  .googlemap {
+    text-align: center;
+  }
+
+  .access-content {
+    display: block;
+    padding: 20px 20px;
+  }
+
+  .address-info {
+    padding-top: 25px;
+    text-align: center;
+  }
+
+  .address {
+    font-size: 15px;
+    line-height: 1.3em;
+  }
+
+  .access-info {
+    font-size: 10px;
+  }
+
+
+
+}
+
+/** -----------------------------------
+      フッター
+-------------------------------------**/
+#footer {
+  height: 80px;
+  background-color: #5c935f;
+  padding: 10px 0;
+  margin-top: 40px;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.copyright {
+  color: #fefefe;
+
+}
+
+.footer-area {
+  display: none;
+}
+
+  /** -------- スマホ -------- **/
+  @media screen and (max-width: 768px) {
+    #footer {
+      height: 45px;
+      padding: 8px 0;
+      margin-top: 0;
+    }
+
+    .copyright {
+      margin: 0;
+    }
+
+
+    .footer-area {
+      display: block;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #fefefe;
+  	  z-index: 100;
+    }
+
+    .footer-area-inner {
+      position: relative;
+      width: 70%;
+      margin: auto;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+
+     .footer-btn {
+        background-color: #4d340e;
+        color: #fefefe;
+        border: 2px solid #4d340e;
+        display: inline-block;
+        text-align: center;
+        text-decoration: none;
+      	width: 70%;
+        padding: 5px 0;
+        font-size: 15px;
+        letter-spacing: 0.25em;
+      }
+
+
+  }
