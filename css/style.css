@@ -72,8 +72,8 @@ img {
 /** -------- スマホ -------- **/
 @media screen and (max-width: 768px){
   #news, #order, #store, #access {
-    padding: 30px 25px;
-    max-width: 550px;
+    padding: 30px 20px;
+    max-width: 560px;
     margin: auto;
   }
 
@@ -82,10 +82,10 @@ img {
   }
 
   .btn {
-    width: 160px;
-    height: 38px;
-    font-size: 12px;
-    padding: 8px 0;
+    width: 200px;
+    height: 40px;
+    font-size: 14px;
+    padding: 7px 0;
   }
 }
 
@@ -117,7 +117,7 @@ img {
 .header-right {
   display: block;
   margin-left: auto;
-  margin-right: -55px;
+  margin-right: -65px;
   margin-bottom: 7px;
 }
 
@@ -176,7 +176,7 @@ ul.gnav-pc li {
 }
 
 ul.gnav-pc li a {
-  font-size: 20px;
+  font-size: 21px;
   letter-spacing: 0.2em;
   color: #4d340e;
 }
@@ -275,7 +275,7 @@ ul.gnav-pc li a:hover {
     height: 100vh;
     background-color: #fefefe;
     position: fixed;
-    padding: 60px 0;
+    padding: 70px 0;
     position: fixed;
     top: 0;
     right: -100%;
@@ -305,9 +305,13 @@ ul.gnav-pc li a:hover {
 
   ul.gnav-sp li a {
     font-family: "游明朝 Medium", "ヒラギノ明朝 Pro W3", sans-serif;
-    font-size: 20px;
+    font-size: 23px;
     color: #4d340e;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.2em;
+  }
+
+  .sp-order {
+    letter-spacing: 0.5em;
   }
 }
 /** -----------------------------------
@@ -327,8 +331,8 @@ ul.gnav-pc li a:hover {
 .copy-wrap {
   color: #fefefe;
   position: absolute;
-  left: 80px;
-  bottom: 400px;
+  left: 5%;
+  bottom: 55%;
   text-align: center;
   text-shadow: 3px 3px 3px rgb(67 106 69);
 }
@@ -341,9 +345,9 @@ ul.gnav-pc li a:hover {
 }
 
 .subcopy {
-  font-size: 26px;
+  font-size: 28px;
   line-height: 1.2;
-  letter-spacing: 0.25em;
+  letter-spacing: 0.2em;
 }
 
 /** -------- スマホ -------- **/
@@ -365,11 +369,12 @@ ul.gnav-pc li a:hover {
   .subcopy {
     font-size: 10px;
     letter-spacing: 0.03em;
+    text-align: left;
   }
 
   .copy-wrap {
-    left: 15px;
-    bottom: 175px;
+    left: 3%;
+    bottom: 46%;
   }
 }
 
@@ -377,16 +382,16 @@ ul.gnav-pc li a:hover {
       お知らせ
 -------------------------------------**/
 .news-info {
-  padding: 50px 20px;
+  padding: 50px 15px;
 }
 
 .news-info dl {
-  font-size: 20px;
+  font-size: 21px;
   overflow: hidden;
   padding-top: 10px;
   padding-bottom: 20px;
   border-bottom: 2px dashed #4d340e;
-  max-width: 800px;
+  max-width: 850px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -418,7 +423,7 @@ ul.gnav-pc li a:hover {
   }
 
   .news-info dl {
-    font-size: 15px;
+    font-size: 18px;
   }
 
   .news-info dt {
@@ -431,7 +436,7 @@ ul.gnav-pc li a:hover {
   }
 
   .newsbtn {
-    font-size: 13px;
+    font-size: 16px;
     letter-spacing: 0.25em;
   }
 }
@@ -439,11 +444,15 @@ ul.gnav-pc li a:hover {
 /** -----------------------------------
       ご注文
 -------------------------------------**/
+.title-order {
+  letter-spacing: 0.5em;
+}
+
 .comment {
   text-align: center;
   font-size: 23px;
-  line-height: 1.2;
-  letter-spacing: 0.1em;
+  line-height: 1.3;
+  letter-spacing: 0.12em;
   padding: 70px 0 20px 0;
 }
 
@@ -517,6 +526,7 @@ ul.gnav-pc li a:hover {
     display: flex;
     align-items: center;
     font-size: 15px;
+    letter-spacing: 0.05em;
   }
 
   .form-item-label.ismsg {
@@ -598,8 +608,8 @@ ul.gnav-pc li a:hover {
 }
 
 .store-photo {
-  width: 50%;
-  height: 50%;
+  width: 47%;
+  height: 47%;
 }
 
 .holiday {
@@ -619,9 +629,9 @@ ul.gnav-pc li a:hover {
   .info {
     font-size: 0.6em;
     letter-spacing: 0.11em;
-    line-height: 1.2;
+    line-height: 1.4;
     padding-top: 15px;
-    margin-bottom: 5px;
+    margin-bottom: 0;
   }
 
   .holiday {
@@ -674,12 +684,13 @@ iframe {
 /** -------- スマホ -------- **/
 @media screen and (max-width: 768px) {
   iframe {
-    width: 200px;
-    height: 150px;
+    width: 250px;
+    height: 170px;
   }
 
   .googlemap {
     text-align: center;
+    padding: 10px 0;
   }
 
   .access-content {
@@ -693,12 +704,12 @@ iframe {
   }
 
   .address {
-    font-size: 15px;
-    line-height: 1.3em;
+    font-size: 17px;
+    line-height: 1.7em;
   }
 
   .access-info {
-    font-size: 10px;
+    font-size: 11px;
   }
 
 
@@ -711,10 +722,10 @@ iframe {
 #footer {
   height: 80px;
   background-color: #5c935f;
-  padding: 10px 0;
-  margin-top: 40px;
+  padding-top: 10px;
+  margin-top: 30px;
   text-align: center;
-  margin-bottom: 0;
+  margin-bottom: -24px;
 }
 
 .copyright {
@@ -732,6 +743,7 @@ iframe {
       height: 45px;
       padding: 8px 0;
       margin-top: 0;
+      margin-bottom: 0;
     }
 
     .copyright {
