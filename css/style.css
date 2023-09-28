@@ -85,7 +85,7 @@ img {
     width: 200px;
     height: 40px;
     font-size: 14px;
-    padding: 7px 0;
+    padding: 6px 0;
   }
 }
 
@@ -495,14 +495,15 @@ ul.gnav-pc li a:hover {
   text-indent: 0.35em;
 }
 
-.sp-order {
+#sp-order {
   display: none;
 }
+
 
 /** -------- スマホ -------- **/
 @media screen and (max-width: 768px) {
   .comment {
-    font-size: 15px;
+    font-size: 18px;
     padding: 20px 15px;
   }
 
@@ -510,7 +511,7 @@ ul.gnav-pc li a:hover {
     display: none;
   }
 
-  .sp-order {
+  #sp-order {
     display: block;
     text-align: center;
   }
@@ -525,7 +526,7 @@ ul.gnav-pc li a:hover {
     max-width: inherit;
     display: flex;
     align-items: center;
-    font-size: 15px;
+    font-size: 16px;
     letter-spacing: 0.05em;
   }
 
@@ -541,9 +542,9 @@ ul.gnav-pc li a:hover {
     border-radius: 4px;
     padding-top: 4px;
     padding-bottom: 4px;
-    width: 30px;
-    font-size: 10px;
-    margin-right: 8px;
+    width: 33px;
+    font-size: 11px;
+    margin-right: 10px;
   }
 
   .form-item-input {
@@ -551,7 +552,7 @@ ul.gnav-pc li a:hover {
     margin-top: 0;
     height: 40px;
     flex: inherit;
-    font-size: 15px;
+    font-size: 14px;
     border: 1px solid #ddd;
     border-radius: 6px;
     flex: 1;
@@ -576,11 +577,11 @@ ul.gnav-pc li a:hover {
 
   .form-btn {
     margin-top: 15px;
-    padding: 5px 0;
+    padding: 4px 0;
     width: 140px;
     height: 35px;
     font-family: "游明朝 Medium", "ヒラギノ明朝 Pro W3", sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     color: #fefefe;
     background-color: #4d340e;
     border-radius: 6px;
@@ -615,6 +616,7 @@ ul.gnav-pc li a:hover {
 .holiday {
   font-size: 28px;
   letter-spacing: 0.08em;
+  margin-top: -20px;
 }
 
 .info-tel {
@@ -627,17 +629,16 @@ ul.gnav-pc li a:hover {
   }
 
   .info {
-    font-size: 0.6em;
-    letter-spacing: 0.11em;
-    line-height: 1.4;
-    padding-top: 15px;
+    font-size: 11px;
+    padding-top: 5px;
+    letter-spacing: 0.1em;
     margin-bottom: 0;
   }
 
   .holiday {
-    font-size: 0.5em;
-    letter-spacing: 0;
-    margin-top: 0;
+    font-size: 11px;
+    letter-spacing: 0.01em;
+    margin-top: -6px;
   }
 
   .store-photo {
@@ -684,8 +685,8 @@ iframe {
 /** -------- スマホ -------- **/
 @media screen and (max-width: 768px) {
   iframe {
-    width: 250px;
-    height: 170px;
+    width: 220px;
+    height: 160px;
   }
 
   .googlemap {
@@ -704,7 +705,8 @@ iframe {
   }
 
   .address {
-    font-size: 17px;
+    font-size: 16px;
+    letter-spacing: 0.08em;
     line-height: 1.7em;
   }
 
@@ -779,7 +781,7 @@ iframe {
         text-decoration: none;
       	width: 70%;
         padding: 5px 0;
-        font-size: 15px;
+        font-size: 16px;
         letter-spacing: 0.25em;
       }
 
