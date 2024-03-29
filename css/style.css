@@ -95,7 +95,7 @@ img {
 #header {
   background-color: #fefefe;
   width: 100%;
-  height: 110px;
+  height: 120px;
   display: flex;
   justify-content: space-between;
   padding: 0 30px;
@@ -167,6 +167,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-bottom: 20px;
 }
 
 ul.gnav-pc li {
@@ -325,7 +326,7 @@ ul.gnav-pc li a:hover {
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
-  margin-top: 100px;
+  margin-top: 120px;
 }
 
 .copy-wrap {
@@ -333,7 +334,7 @@ ul.gnav-pc li a:hover {
   position: absolute;
   left: 5%;
   bottom: 55%;
-  text-align: center;
+  text-align: left;
   text-shadow: 3px 3px 3px rgb(67 106 69);
 }
 
@@ -391,7 +392,7 @@ ul.gnav-pc li a:hover {
   padding-top: 10px;
   padding-bottom: 20px;
   border-bottom: 2px dashed #4d340e;
-  max-width: 850px;
+  max-width: 950px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -448,6 +449,10 @@ ul.gnav-pc li a:hover {
   letter-spacing: 0.5em;
 }
 
+.order-fax {
+  color: #4d340e;
+  border-bottom: 3px solid #4d340e;
+}
 .comment {
   text-align: center;
   font-size: 23px;
@@ -455,6 +460,106 @@ ul.gnav-pc li a:hover {
   letter-spacing: 0.12em;
   padding: 70px 0 20px 0;
 }
+
+#pc-order {
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 850px;
+}
+
+.form-item {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.Form-Item:nth-child(5) {
+  border-bottom: 1px solid #ddd;
+}
+
+.form-item-label {
+  width: 100%;
+  max-width: 248px;
+  letter-spacing: 0.05em;
+  font-weight: bold;
+  font-size: 18px;
+  padding-left: 20px;
+}
+
+.form-item-label.ismsg {
+  margin-top: 8px;
+  margin-bottom: auto;
+}
+
+.form-item-label-required {
+  border-radius: 4px;
+  margin-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 45px;
+  display: inline-block;
+  text-align: center;
+  background: #5c935f;
+  color: #fff;
+  font-size: 14px;
+}
+
+ .form-item-input {
+   border: 1px solid #ddd;
+   border-radius: 6px;
+   margin-left: 40px;
+   padding-left: 1em;
+   padding-right: 1em;
+   height: 48px;
+   flex: 1;
+   width: 100%;
+   max-width: 500px;
+   background: #eaedf2;
+   font-size: 18px;
+ }
+
+.form-item-textarea {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-left: 40px;
+  padding-left: 1em;
+  padding-right: 1em;
+  height: 220px;
+  flex: 1;
+  width: 100%;
+  max-width: 500px;
+  background: #eaedf2;
+  font-size: 18px;
+}
+
+.form-btn {
+  border-radius: 5px;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 280px;
+  display: block;
+  letter-spacing: 0.2em;
+  background: #5c935f;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  border: 2px solid rgba(0, 0, 0, 0);
+}
+
+ .form-btn:hover {
+   cursor: pointer;
+   opacity: 0.8;
+   background-color: #fefefe;
+   color: #5c935f;
+   border: 2px solid #5c935f;
+ }
 
 .order-box {
   padding: 45px 70px;
@@ -507,6 +612,10 @@ ul.gnav-pc li a:hover {
     padding: 20px 15px;
   }
 
+  #pc-order {
+    display: none;
+  }
+
   .order-box {
     display: none;
   }
@@ -537,7 +646,7 @@ ul.gnav-pc li a:hover {
   .form-item-label-required {
     display: inline-block;
     text-align: center;
-    background: #4d340e;
+    background: #5c935f;
     color: #fefefe;
     border-radius: 4px;
     padding-top: 4px;
@@ -583,7 +692,7 @@ ul.gnav-pc li a:hover {
     font-family: "游明朝 Medium", "ヒラギノ明朝 Pro W3", sans-serif;
     font-size: 16px;
     color: #fefefe;
-    background-color: #4d340e;
+    background-color: #5c935f;
     border-radius: 6px;
     letter-spacing: 0.25em;
     text-align: center;
@@ -603,7 +712,7 @@ ul.gnav-pc li a:hover {
 .info {
   font-size: 30px;
   font-weight: bold;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.08em;
   line-height: 1.5em;
   padding-top: 25px;
 }
